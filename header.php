@@ -8,6 +8,7 @@
  * @package growingminds
  */
 
+// Setup header image
 $header_img = '';
 if (get_field('featured_image_on_post_page') == 'false') {
 	$header_img = get_field('featured_image');
