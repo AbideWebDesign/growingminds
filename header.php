@@ -9,7 +9,7 @@
  */
 
 $header_img = '';
-if (get_field('featured_image')) {
+if (get_field('featured_image_on_post_page') == 'false') {
 	$header_img = get_field('featured_image');
 }
 
