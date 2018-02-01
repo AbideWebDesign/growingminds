@@ -1,0 +1,298 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Header Top */
+.header-top {
+	background-color: $color__background-primary;
+	color: white;
+	font-size: 14px;
+}
+
+.header-top .navbar {
+	margin-bottom: 0;
+}
+
+.header-top .navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.header-top .navbar-nav {
+	margin-left: -30px;
+}
+
+.header-top .navbar-default .navbar-nav > li > a, .header-top .navbar-default .navbar-nav > li > a a:hover {
+	color: white;
+}
+
+.navbar-social > li > a{
+	padding: 15px 10px;
+}
+
+.nav-divider-right {
+	border-right: 1px solid #d6d6d6;
+	padding-right: 20px;
+	margin-right: 20px;
+}
+
+/* Header Top Responsive */
+@media (max-width: 768px) {
+	.header-top .navbar-nav {
+		margin-left: 0;
+	}
+}
+.header-top .navbar-default .navbar-toggle {
+	border-color: white;
+}
+
+.header-top .navbar-default .navbar-toggle:hover, .header-top .navbar-default .navbar-toggle:active, .header-top .navbar-default .navbar-toggle:focus {
+	background-color: $color__background-primary;
+}
+
+.header-top .navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+@media (max-width: 768px) {
+	.nav-social-xs {
+		float: left;
+	}
+	.nav-social-xs ul {
+		margin: 0;
+		padding: 0;
+	}
+	.nav-social-xs li {
+		display: inline-block;
+		list-style: none;
+		padding-right: 10px;
+	}
+	.nav-social-xs li:last-child {
+		padding-right: 0;
+	}
+	.nav-social-xs a {
+		line-height: 50px;
+		height: 50px;
+		color: white;
+		font-size: 1.5em;
+	}
+	.navbar-header {
+		float: right;
+	}
+	.navbar-default .navbar-collapse {
+		clear: both;
+	}
+	.navbar-nav > li > a {
+		padding-left: 0;
+	}
+}
+
+/* Header Main */
+.site-header {
+	max-height: 400px;
+	min-height: 350px;
+	background: url('http://growingminds.local/wp-content/uploads/2018/01/img-header.jpg') top left no-repeat;
+	background-size: cover;
+}
+
+.site-header-top {
+	background-color: rgba(0,0,0,.7);
+	padding: 10px 0;
+}
+
+.site-branding img {
+	width: 200px;
+}
+
+@media (max-width: 768px) {
+	.site-header {
+		min-height: auto;
+	}
+}
+
+/* Content Area */
+.site-content {
+	background-color: $color__background-content;
+	padding: 0 0 3em 0;
+}
+
+.box-content, .box-sidebar {
+	background-color: white;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding: 3em 2em;
+}
+
+.posts-wrap {
+	margin-bottom: 4em;
+}
+
+.posts-wrap:last-child {
+	margin-bottom: 0;
+}
+
+.posts-wrap h2 {
+	margin-top: 0;
+	font-size: 23px;
+	font-weight: 600;
+}
+
+.post-meta {
+	color: #666;
+	font-size: .9em;
+	margin-bottom: 5px;
+}
+
+.post-content {
+	margin: 2em 0 0 0;
+}
+
+.post-social {
+	margin: 2em 0;
+	text-align: center;
+}
+
+.post-footer {
+	border-top: 1px solid #ccc;
+	padding-top: 2em;
+	margin-top: 2em;
+}
+.post-footer p {
+	color: #666;
+}
+
+/* Content Area Responsive */
+@media (max-width: 768px) {
+	.site-content {
+		padding: 0;
+	}
+	
+	.box-content {
+		padding: 2em 1em;
+	}
+	
+	.posts-wrap .img {
+		width: 50%;
+		display: block;
+		margin: auto;
+	}
+	
+	.posts-wrap h2 {
+		font-size: 1.5em;
+		text-align: center;
+		margin-top: 1em;
+	}
+	
+	.posts-wrap .post-meta {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	.posts-wrap a {
+		text-align: center;
+		display: block;
+	}
+	
+	.post-read-more {
+		padding: 2em 0;
+	}
+	
+	.post-footer-logo {
+		text-align: center;
+	}
+	
+	.post-footer-logo img {
+		width: 75%;
+		display: inline-block;
+	}
+	
+	.post-footer-content {
+		padding-top: 1em;
+		text-align: center;
+	}
+	
+	.post-footer-btn {
+		text-align: center;
+	}
+	
+	.pull-left-xs {
+		float: right;
+	}
+	
+}
+
+/* Sidebar area */
+.box-sidebar {
+	padding: 3em 0 0 0;
+}
+
+.search-form {
+	padding: 0 1em;
+}
+
+#search{
+	width: 100%;
+}
+
+#search:focus {
+	outline: none;
+}
+
+.categories-wrap ul {
+	margin: 0;
+	padding: 0;
+}
+
+.categories-wrap li {
+	list-style: none;
+	padding: 1em 2em;
+	border-bottom: 1px solid #ccc;
+}
+
+.categories-wrap .active a:before {
+	font-family: 'FontAwesome';
+	content: '\f0d9';
+	color: white;
+	display: block;
+	position: absolute;
+    left: 10px;
+}
+.categories-wrap li a:hover {
+	text-decoration: none;
+}
+
+.categories-wrap li:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+/* Footer area */
+.site-footer {
+	padding: 1em 0;
+	font-size: 15px;
+	background-color: #3a3a3a;
+	color: #bbbbbb;
+	text-align: center;
+}
+.site-footer a {
+	color: #bbbbbb;
+}

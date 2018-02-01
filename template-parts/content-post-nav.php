@@ -1,0 +1,1 @@
+<div class="text-center"><?php next_posts_link( 'More Posts »', 0 ); ?></div>

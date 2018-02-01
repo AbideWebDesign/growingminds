@@ -1,0 +1,68 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+a {
+	-webkit-transition: background-color .4s ease-in-out,border-color .4s ease-in-out,color .4s ease-in-out;
+    transition: background-color .4s ease-in-out,border-color .4s ease-in-out,color .4s ease-in-out;
+}
+
+.btn {
+	background-color: #fff;
+    color: #666;
+    border-radius: 21px;
+    padding: 0 2rem;
+    height: 42px;
+    line-height: 42px;
+    border: #aaa 1px solid;
+}
+
+.btn:hover {
+	border-color: #41572d;
+}
+
+.btn-alt, .btn-alt:hover {
+	background-color: $brand-color;
+	border-color: $brand-color;
+	color: white;
+}
+
+.form-control, .form-control:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.form-control:focus {
+	outline: none;
+	border-color: #ccc;
+}
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
+
+@import "helpers";
