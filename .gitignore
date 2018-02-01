@@ -1,3 +1,4 @@
 -*.log
--.scss
+-**/scss
 -.DS_Store
+-.codekit3
