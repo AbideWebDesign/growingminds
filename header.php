@@ -25,6 +25,7 @@ if (get_field('featured_image_on_post_page') == 'True') {
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="https://oregonaitc.org/wp-content/uploads/2015/05/favicon.png">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script>
 	  (function(d) {
