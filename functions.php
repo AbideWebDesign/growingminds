@@ -52,6 +52,8 @@ if ( ! function_exists( 'growingminds_setup' ) ) :
 		add_image_size('post-thumb', 200, 200, true);
 		add_image_size('post-image', 800, 9999, true);
 		add_image_size('post-header', 1600, 400, true);
+		
+
 
 }
 endif;
@@ -122,4 +124,13 @@ function unregister_tags() {
     unregister_taxonomy_for_object_type( 'post_tag', 'post' );
 }
 add_action( 'init', 'unregister_tags' );
+
+
+/**
+ * Add title tag support
+ */
+function theme_slug_setup() {
+   add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'theme_slug_setup' );
 

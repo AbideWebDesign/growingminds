@@ -22,6 +22,7 @@ if (get_field('featured_image_on_post_page') == 'True') {
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
