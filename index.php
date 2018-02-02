@@ -18,13 +18,16 @@ get_header(); ?>
 		<main id="main" class="site-main">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1">
+					<div class="col-sm-9">
 						<div class="box-content">
 							<?php while ( have_posts() ) : the_post(); ?>
-								<h2><?php the_title(); ?></h2>
-								<?php the_content(); ?>
+								<?php get_template_part('template-parts/content', 'list-post'); ?>
 							<?php endwhile; ?>
+							<?php get_template_part('template-parts/content', 'post-nav'); ?>
 						</div>
+					</div>
+					<div class="col-sm-3">
+						<?php get_template_part('template-parts/content', 'sidebar'); ?>
 					</div>
 				</div>
 			</div>
