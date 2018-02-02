@@ -10,7 +10,7 @@
 
 // Setup header image
 $header_img = '';
-if (get_field('featured_image_on_post_page') == 'false') {
+if (get_field('featured_image_on_post_page') == 'true') {
 	$header_img = get_field('featured_image');
 }
 
@@ -70,7 +70,7 @@ if (get_field('featured_image_on_post_page') == 'false') {
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'growingminds' ); ?></a>
 
-	<header id="masthead" class="site-header" <?php if(isset($header_img)): ?>style="background-image: url(<?php echo $header_img['sizes']['post-header']; ?>)"<?php endif; ?>>
+	<header id="masthead" class="site-header" <?php if (get_field('featured_image_on_post_page') == 'true'): ?>style="background-image: url(<?php echo $header_img['sizes']['post-header']; ?>)"<?php endif; ?>>
 		<div class="site-header-top">
 			<div class="container">
 				<div class="site-branding">
