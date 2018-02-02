@@ -23,7 +23,7 @@ a {
     transition: background-color .4s ease-in-out,border-color .4s ease-in-out,color .4s ease-in-out;
 }
 
-.btn {
+.btn, body .gform_wrapper .gform_footer input.button .gform_button {
 	background-color: #fff;
     color: #666;
     border-radius: 21px;
@@ -33,7 +33,7 @@ a {
     border: #aaa 1px solid;
 }
 
-.btn:hover {
+.btn:hover, body .gform_wrapper .gform_footer input.button .gform_button:hover {
 	border-color: #41572d;
 }
 
