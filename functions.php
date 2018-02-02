@@ -49,7 +49,7 @@ if ( ! function_exists( 'growingminds_setup' ) ) :
 		) ) );
 		
 		// Add image sizes
-		add_image_size('post-thumb', 300, 300, true);
+		add_image_size('post-thumb', 200, 200, true);
 		add_image_size('post-image', 800, 9999, true);
 		add_image_size('post-header', 1600, 400, true);
 
