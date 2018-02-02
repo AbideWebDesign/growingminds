@@ -9,9 +9,13 @@
  */
 
 // Setup header image
-$header_img = '';
-if (get_field('featured_image_on_post_page') == 'true') {
+$header = '';
+
+if (get_field('featured_image_on_post_page') == 'True') {
 	$header_img = get_field('featured_image');
+	$header = $header_img['sizes']['post-header'];
+} else {
+	$header = home_url('/wp-content/uploads/2018/01/img-header.jpg');
 }
 
 ?>
@@ -70,11 +74,11 @@ if (get_field('featured_image_on_post_page') == 'true') {
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'growingminds' ); ?></a>
 
-	<header id="masthead" class="site-header" <?php if (get_field('featured_image_on_post_page') == 'true'): ?>style="background-image: url(<?php echo $header_img['sizes']['post-header']; ?>)"<?php endif; ?>>
+	<header id="masthead" class="site-header" style="background-image: url(<?php echo $header; ?>)">
 		<div class="site-header-top">
 			<div class="container">
 				<div class="site-branding">
-					<a href="<?php echo home_url(); ?>"><img src="http://growingminds.local/wp-content/uploads/2018/01/logo-growing-minds.png" /></a>
+					<a href="<?php echo home_url(); ?>"><img src="<?php echo home_url(); ?>/wp-content/uploads/2018/01/logo-growing-minds.png" /></a>
 				</div><!-- .site-branding -->
 			</div>
 		</div>

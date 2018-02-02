@@ -110,7 +110,8 @@
 .site-header {
 	max-height: 400px;
 	min-height: 350px;
-	background: url('http://growingminds.local/wp-content/uploads/2018/01/img-header.jpg') top left no-repeat;
+	background-position: top left;
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
