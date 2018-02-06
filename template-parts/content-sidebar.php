@@ -29,4 +29,7 @@ if (is_category()) {
 		<?php endforeach; ?>
 		</ul>
 	</div>
+	<div class="social-wrap">
+		<div class="fb-page" data-href="https://www.facebook.com/oregonaitc/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/oregonaitc/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/oregonaitc/">Oregon Agriculture in the Classroom</a></blockquote></div>
+	</div>
 </div>
