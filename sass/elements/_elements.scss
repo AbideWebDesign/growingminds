@@ -23,7 +23,7 @@ a {
     transition: background-color .4s ease-in-out,border-color .4s ease-in-out,color .4s ease-in-out;
 }
 
-.btn, body .gform_wrapper .gform_footer input.button .gform_button {
+.btn, body .gform_wrapper .gform_footer input.button .gform_button, body .gform_wrapper .gform_footer input.button, body .gform_wrapper .gform_footer input[type=submit] {
 	background-color: #fff;
     color: #666;
     border-radius: 21px;

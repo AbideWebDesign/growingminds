@@ -71,7 +71,7 @@ if (get_field('featured_image_on_post_page') == 'True') {
 		    <div class="collapse navbar-collapse" id="menu-top-wrap">
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-top', 'menu_class' => 'nav navbar-nav' ) ); ?>
 				<ul class="nav navbar-nav navbar-right navbar-social hidden-xs">
-					<li class="nav-divider-right"><a href="https://oregonaitc.org"><i class="fa fa-home"></i> Oregon Ag in the Classroom</a></li>
+					<li class="nav-divider-right"><a href="https://oregonaitc.org"><i class="fa fa-home"></i> Oregon Agriculture in the Classroom</a></li>
 					<li><a target="_blank" href="https://www.facebook.com/OregonAITC/?ref=hl"><i class="fa fa-facebook-official"></i></a></li>
 					<li><a target="_blank" href="https://twitter.com/OregonAITC"><i class="fa fa-twitter"></i></a></li>
 					<li><a target="_blank" href="https://www.pinterest.com/oregonaitc/"><i class="fa fa-pinterest"></i></a></li>

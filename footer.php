@@ -18,7 +18,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="site-info">
-						Oregon Agriculture in the Classroom 501(c)(3) | 
+						<a href="http://oregonaitc.org">Oregon Agriculture in the Classroom</a> 501(c)(3) | 
 						Copyright <?php echo date('Y'); ?> |
 						<?php printf( esc_html__( 'Made with love by %1$s', 'growingminds' ), '<a target="_blank" href="http://abidewebdesign.com">Abide Web Design</a>' ); ?>
 					</div>
