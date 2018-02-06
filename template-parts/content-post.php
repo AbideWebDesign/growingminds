@@ -5,8 +5,8 @@
 <div class="post-content">
 	<?php the_content(); ?>
 </div>
-<div class="post-read-more visible-xs">
-	<a href="/" class="btn btn-block">Read More Stories</a>
+<div class="post-read-more">
+	<a href="/" class="btn">Read More Stories</a>
 </div>
 <div class="post-social">
 	<div class="addthis_inline_share_toolbox_kaea"></div>

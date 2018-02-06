@@ -167,6 +167,17 @@
 	margin: 2em 0 0 0;
 }
 
+
+.post-read-more {
+	padding: 2em 0;
+	text-align: center;
+}
+
+.post-read-more a {
+	width: 200px;
+	text-align: center;
+}
+
 .post-social {
 	margin: 2em 0;
 	text-align: center;
@@ -211,10 +222,6 @@
 	.posts-wrap a {
 		text-align: center;
 		display: block;
-	}
-	
-	.post-read-more {
-		padding: 2em 0;
 	}
 	
 	.post-footer-logo {
