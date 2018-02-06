@@ -6,7 +6,7 @@
 	<?php the_content(); ?>
 </div>
 <div class="post-read-more">
-	<a href="/" class="btn">Read More Stories</a>
+	<a href="<?php echo home_url(); ?>" class="btn">Read More Stories</a>
 </div>
 <div class="post-social">
 	<div class="addthis_inline_share_toolbox_kaea"></div>
