@@ -11,7 +11,7 @@
 // Setup header image
 $header = '';
 
-if (get_field('featured_image_on_post_page') == 'True' || is_page()) {
+if ((get_field('featured_image_on_post_page') == 'True' && !is_home()) || is_page()) {
 	$header_img = get_field('featured_image');
 	$header = $header_img['sizes']['post-header'];
 } else {
